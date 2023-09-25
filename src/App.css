@@ -18,16 +18,16 @@ label {
   display: inline;
   color: palevioletred;
   font:
-    4rem 'Fira Sans',
+    1rem 'Fira Sans',
     sans-serif;
   
 }
 
 input{
   position: absolute;
-  height: 200px;
-  width: 400px;
+  height: 50px;
+  width: 100px;
   font:
-    4rem 'Fira Sans',
+    1rem 'Fira Sans',
     sans-serif;
 }
