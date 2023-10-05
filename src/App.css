@@ -22,12 +22,10 @@ label {
     sans-serif;
   
 }
-
 input{
   position: absolute;
-  height: 50px;
-  width: 100px;
-  font:
-    1rem 'Fira Sans',
-    sans-serif;
+  min-width: 200px;
+  z-index: 1000;
+  left: 50px;
+  top: 5px;
 }
