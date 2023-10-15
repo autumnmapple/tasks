@@ -24,7 +24,7 @@ function ParentComponent() {
       const newInput = {
         name: name,
         description: description,
-        date: new Date().toLocaleDateString()
+        date: new Date(date).toLocaleDateString()
       };
 
       setInputs([...inputs, newInput]);
