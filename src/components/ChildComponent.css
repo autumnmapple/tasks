@@ -1,0 +1,14 @@
+.element-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #ffa5e9;
+    width: 333px;
+    border-radius: 10px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+}
+
+

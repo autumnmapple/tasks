@@ -14,18 +14,3 @@
 .leaflet-container{
   height: 100vh;
 }
-label {
-  display: inline;
-  color: palevioletred;
-  font:
-    1rem 'Fira Sans',
-    sans-serif;
-  
-}
-input{
-  position: absolute;
-  min-width: 200px;
-  z-index: 1000;
-  left: 50px;
-  top: 5px;
-}
