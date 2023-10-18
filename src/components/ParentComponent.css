@@ -1,6 +1,6 @@
 .new-element {
     position: relative;
-    background-color: #aac4d1;
+    background-color: #f3c2f6;
     width: 350px;
     max-width: 95%;
     border-radius: 10px;
@@ -8,6 +8,7 @@
     box-shadow: 0 1px 7px rgba(0, 0, 0, 0.25);
     z-index: 1000;
     margin-left: 50px;
+    cursor: pointer;
 }
 .new-element__controls {
     display: flex;
