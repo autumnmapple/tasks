@@ -6,19 +6,16 @@ import ParentComponent from "./components/ParentComponent";
 const position = [51.505, -0.09];
 
 const Map = () => {
-  const [isHovered, setIsHovered] = useState(false);
-  const handleHover = (hovered) => {
-    setIsHovered(hovered);
-  };
+  const [map,setMap] = useState(null)
   return (
-    <div>
-      <ParentComponent handleHover={handleHover} />
-      <MapContainer center={position} zoom={13} dragging={!isHovered}>  
+    <div>  
+      <MapContainer center={position} zoom={13} ref={setMap}>  
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <Marker position={position}>
           <Popup>qwe</Popup> 
+          <ParentComponent map={map}/> 
           <div className="txt"><p>Leaflet</p></div> 
         </Marker>
       </MapContainer>
