@@ -1,10 +1,10 @@
 import "./ChildComponent.css"
-const ChildComponent=({name, description, date })=>{
+const ChildComponent=(props)=>{
   return (
     <div className="element-item">
-        <h2>{name}</h2>
-        <h3>{description}</h3>
-        <p>{date}</p>   
+        <h2>{props.name}</h2>
+        <h3>{props.description}</h3>
+        <p>{props.date}</p>   
     </div>
   );
 };
