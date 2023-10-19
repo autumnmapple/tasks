@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./ParentComponent.css";
 import ChildComponent from "./ChildComponent";
-function ParentComponent() {
+import {disableMapDragging, enableMapDragging} from "../MapComponents/MapEvent";
+function ParentComponent(props) {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [date, setDate] = useState("");
@@ -32,7 +33,7 @@ function ParentComponent() {
   };
   
   return (
-    <div className="new-element">
+    <div className="new-element" onMouseDown={() => disableMapDragging(props.map)} onMouseUp={() => enableMapDragging(props.map)}>
       <div className="new-element__controls">
         <div className="new-element__control">
           <label>название</label>
