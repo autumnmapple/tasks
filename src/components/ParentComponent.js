@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ParentComponent.css";
 import ChildComponent from "./ChildComponent";
-function ParentComponent() {
+function ParentComponent(props) {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [date, setDate] = useState("");
@@ -32,7 +32,7 @@ function ParentComponent() {
   };
   
   return (
-    <div className="new-element">
+    <div className="new-element" onMouseEnter={() => props.handleHover(true)} onMouseLeave={() => props.handleHover(false)}>
       <div className="new-element__controls">
         <div className="new-element__control">
           <label>название</label>
