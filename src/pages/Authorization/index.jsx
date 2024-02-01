@@ -12,12 +12,15 @@ const Authorization = () => {
           <input type="password" placeholder="Пароль" />
         </div>
 
-        <button type="submit" className={styles.wrapper__btn}>
-          Войти
-        </button>
+        <Link to="/">
+          <button type="submit" className={styles.wrapper__btn}>
+            Войти
+          </button>
+        </Link>
         <div className={styles.wrapper__reg}>
           <p>
-            У вас нет аккауна? <Link to="/registration">Зарегистрироваться</Link>
+            У вас нет аккауна?{" "}
+            <Link to="/registration">Зарегистрироваться</Link>
           </p>
           <p>
             Забыли пароль? <a href="!#">Восстановить доступ</a>
