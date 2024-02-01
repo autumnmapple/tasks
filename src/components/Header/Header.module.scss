@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Poppins:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Poppins&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 .root {
   position: fixed;
@@ -13,8 +13,6 @@
   padding: 1.3rem 10%;
   background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(50px); 
-  //background-color: #172554;
-
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -45,7 +43,6 @@
     &.active{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         
     }
   }
@@ -60,13 +57,13 @@
     &:hover,
     &:active {
       opacity: 0.8;
-      /* background-color: #0078a8; */
     }
     @media (max-width: 768px) {
       border-radius: 0;
       margin: 0;
       text-align: center;
       height: 50px;
+      line-height: 50px;
       &:hover {
         background-color: rgb(243, 243, 243);
       }
