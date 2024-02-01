@@ -12,3 +12,6 @@ body,#root,.leaflet-container{
 .txt p{
   color:rgb(111, 111, 250);
 }
+.leaflet-bottom{
+  visibility: hidden;
+}

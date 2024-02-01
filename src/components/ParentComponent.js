@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./ParentComponent.css";
 import ChildComponent from "./ChildComponent";
-import {disableMapDragging, enableMapDragging} from "../MapEvent";
-function ParentComponent(props) {
+function ParentComponent() {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [date, setDate] = useState("");
