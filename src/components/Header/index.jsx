@@ -17,16 +17,13 @@ const Header = () => {
       />
       <ul className={`${styles.navbar} ${isOpen ? styles.active : ""}`}>
         <li className={styles.navbar__item}>
-          <Link to="!#">О нас</Link>
+          <Link to="!#">Главная</Link>
         </li>
         <li className={styles.navbar__item}>
-          <Link to="!#">Руководство</Link>
+          <Link to="!#">Руководство пользователя</Link>
         </li>
         <li className={styles.navbar__item}>
-          <Link to="/authorization">Авторизация</Link>
-        </li>
-        <li className={styles.navbar__item}>
-          <Link to="/registration">Выход</Link>
+          <Link to="/authorization">Вход</Link>
         </li>
       </ul>
     </nav>

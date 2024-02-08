@@ -9,4 +9,4 @@ export function disableMapDragging(map) {
 
 export function enableMapDragging(map){
     if(map) map.dragging.enable();
-}
+} 
