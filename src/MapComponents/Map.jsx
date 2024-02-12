@@ -3,6 +3,8 @@ import './Map.css'
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 //import { useState } from "react";
 import Header from "../components/Header";
+import Calendar from '../components/Calendar'
+import Settings from "../components/Settings";
 const position = [51.505, -0.09];
 
 const Map = () => {
@@ -15,10 +17,12 @@ const Map = () => {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <Marker position={position}>
-          <Popup></Popup> 
+          <Popup></Popup>  
           <Header />
+          <Calendar />
+          <Settings/>
         </Marker>
-      </MapContainer>
+      </MapContainer> 
     </>
   );
 }
